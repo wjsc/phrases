@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+}
+.App {
+  transition: background-color 3s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  color:white;
+  height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  font-size: 8vw;
+  padding-left:2em;
+  padding-right:2em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.phrase {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.plus {
+  width: 2em;
+  height: 2em;
+  font-size: 0.2em;
+  border-radius: 2em;
+  background-color: black;
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.plus:hover{
+  box-shadow: 2px 2px 2px #2b2b2b;  
+  opacity: 1;
+}
+.phraseForm {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgb(31, 31, 31), rgb(53, 52, 50));
+}
+.phraseForm input{
+  font-size: 0.4em;
+  padding: 0.2em;
+  margin:0;
+}
+.phraseForm .newPhrase{
+  color: white;
+  display: inline-flex;
+  flex-grow: 8;
+  border:none;
+  background-color: transparent;
+  outline: none;  
+}
+.phraseForm .cancel{
+  flex-grow: 1;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  text-align: center!important;
+}
+
+  
